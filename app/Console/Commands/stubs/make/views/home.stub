@@ -6,7 +6,7 @@
         <div class="col-md-8">
 
           @if (session('status'))
-            @component('components.alert',[
+            @component('tabler::components.alert',[
                 'type' => 'success'  //default type is success if you not declare the alert type
               ])
               @slot('text')
@@ -15,7 +15,7 @@
             @endcomponent
           @endif
 
-          @component('components.panel')
+          @component('tabler::components.panel')
             @slot('header', 'Dashboard')
             @slot('body')
               You are logged in!

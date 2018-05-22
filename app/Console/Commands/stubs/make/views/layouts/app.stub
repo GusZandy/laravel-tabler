@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('tabler::layouts.main')
 
 @if (auth()->check())
 @section('user-avatar', 'https://www.gravatar.com/avatar/' . md5(auth()->user()->email) . '?d=mm')
