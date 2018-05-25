@@ -58,8 +58,7 @@ class TablerMakeCommand extends Command
      $this->info('Start Inspinia scaffolding');
      $this->info('Copying views...');
      $this->createDirectories();
-     $this->call('', ['--version' => '']);
-     $version = explode(' ', $this->output())[2];
+     $version = app()->version();
      if (substr($version, 0, 3) == "5.5") {
        foreach ($this->views as $key => $value) {
          copy(
