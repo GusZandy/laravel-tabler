@@ -33,7 +33,11 @@
       <i class="dropdown-icon fe fe-log-out"></i> {{ __('Logout') }}
     </a>
     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+      @if (substr(app()->version(), 0, 3) == "5.5")
+        {{ csrf_field() }}
+      @elseif (substr(app()->version(), 0, 3) == "5.6")
         @csrf
+      @endif
     </form>
   </div>
 </div>
