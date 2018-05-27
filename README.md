@@ -1,5 +1,5 @@
 # Laravel Tabler
-Laravel Package for integrating Tabler template and this package is Laravel Mix friendly. Currently this package can be integrated easily only on fresh installation.
+Laravel 5.5 and 5.6 Package for integrating Tabler template and this package is Laravel Mix friendly. Currently this package can be integrated easily only on fresh installation.
 
 # Installation
 ```bash
