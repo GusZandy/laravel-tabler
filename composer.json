@@ -3,7 +3,7 @@
     "description": "Laravel Package for integrating Tabler template and this package is Laravel Mix friendly.",
     "keywords": ["laravel", "tabler", "package", "composer"],
     "license": "MIT",
-    "type": "project",
+    "type": "package",
     "require": {
         "php": ">=7.0.0",
         "laravel/framework": "^5.6 || 5.5.*"
