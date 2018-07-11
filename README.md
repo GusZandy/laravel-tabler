@@ -22,3 +22,44 @@ Let's see what we've install. First, make sure that you already ran ```php artis
 php artisan serve
 ```
 Viola! You've running a Laravel site using Tabler.
+
+# Configuration and Views Customization
+## Config
+To publish this package config to your app config run
+```bash
+php artisan vendor:publish --provider="GuzZandy\Tabler\Providers\AppServiceProvider" --tag="config"
+```
+## Views
+To publish this package views so you can customize on your own run
+```bash
+php artisan vendor:publish --provider="GuzZandy\Tabler\Providers\AppServiceProvider" --tag="views"
+```
+
+# Next Step
+First of all, you should understand how to use [Laravel Mix](https://laravel.com/docs/mix) and install latest laravel-mix.
+
+Tabler need some package on npm. First you need to run
+```bash
+npm install
+```
+
+Install Tabler needed package from npm
+```bash
+npm install --save-dev bootstrap popper.js chart.js font-awesome jquery-circle-progress jvectormap requirejs selectize sparkline tabler-ui tablesorter
+```
+
+Run Laravel Mix command
+```bash
+npm run development
+```
+or use ```production``` minimize output
+```bash
+npm run production
+```
+
+Then have a good look on these files
+- ```webpack.mix.js```
+- ```resources/assets/js/tabler.js```
+- ```resources/assets/sass/tabler.scss```
+
+Happy experimenting!

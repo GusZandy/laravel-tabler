@@ -14,8 +14,9 @@ let mix = require('laravel-mix');
 mix.webpackConfig({
   resolve: {
     alias: {
-      'circle-progress': path.resolve(__dirname, 'node_modules/tabler-ui/dist/assets/js/vendors/circle-progress.min.js'),
-      'core': path.resolve(__dirname, 'node_modules/tabler-ui/dist/assets/js/core.js')
+      'circle-progress': 'jquery-circle-progress',
+      'core': path.resolve(__dirname, 'node_modules/tabler-ui/dist/assets/js/core.js'),
+      'vector-map': 'jvectormap'
     }
   }
 });
@@ -28,7 +29,17 @@ mix.autoload({
 });
 
 mix.extract([
-  'lodash', 'jquery', 'vue'
+  'lodash',
+  'popper.js',
+  'bootstrap',
+  'chart.js',
+  'jquery',
+  'jquery-circle-progress',
+  'jvectormap',
+  'requirejs/require',
+  'sparkline',
+  'tablesorter',
+  'vue'
 ], 'public/js/vendor.js');
 
 mix.version();

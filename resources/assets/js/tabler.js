@@ -13,8 +13,25 @@ try {
 
     require('bootstrap');
 
-    /** Tabler */
-    require('tabler-ui/dist/assets/js/require.min');
+    // Chart.js
+    require('chart.js');
+
+    // Sparkline
+    require('sparkline');
+
+    // Tablesorter
+    require('tablesorter');
+
+    // jQuery vector map
+    require('vector-map');
+
+    // Selectize
+    require('selectize');
+
+    // RequireJS
+    require('requirejs/require');
+
+    // Tabler
     require('tabler-ui/dist/assets/js/dashboard');
 
 } catch (e) {}

@@ -12,16 +12,20 @@
     "devDependencies": {
         "axios": "^0.18",
         "bootstrap": "^4.1.1",
+        "chart.js": "^2.7.2",
         "cross-env": "^5.2.0",
         "font-awesome": "^4.7.0",
         "jquery": "^3.2",
         "jquery-circle-progress": "^1.2.2",
+        "jvectormap": "^2.0.4",
         "laravel-mix": "^2.1.11",
         "lodash": "^4.17.4",
         "popper.js": "^1.12",
         "requirejs": "^2.3.5",
+        "selectize": "^0.12.5",
         "sparkline": "^0.2.0",
         "tabler-ui": "0.0.32",
+        "tablesorter": "^2.30.7",
         "vue": "^2.5.7"
     }
 }
