@@ -45,7 +45,7 @@ npm install
 
 Install Tabler needed package from npm
 ```bash
-npm install --save-dev bootstrap popper.js chart.js font-awesome jquery-circle-progress jvectormap requirejs selectize sparkline tabler-ui tablesorter
+npm install --save-dev bootstrap bootstrap-sass popper.js chart.js d3 font-awesome jquery-circle-progress jvectormap moment requirejs select2 select2-bootstrap-theme selectize sparkline tabler-ui tablesorter
 ```
 
 Run Laravel Mix command

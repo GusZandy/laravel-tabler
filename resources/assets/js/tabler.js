@@ -31,8 +31,20 @@ try {
     // RequireJS
     require('requirejs/require');
 
+    // bootstrap-datepicker
+    require('bootstrap-datepicker');
+
+    // select2
+    require('select2');
+
     // Tabler
     require('tabler-ui/dist/assets/js/dashboard');
+
+    // Tabler Plugin
+    require('tabler-ui/src/assets/plugins/charts-c3/js/c3.min');
+    require('tabler-ui/src/assets/plugins/fullcalendar/js/fullcalendar.min');
+    require('tabler-ui/src/assets/plugins/input-mask/js/jquery.mask.min');
+    require('tabler-ui/src/assets/plugins/prismjs/js/prism.pack');
 
 } catch (e) {}
 
@@ -76,3 +88,15 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+$(document).ready(function() {
+  $('.js-datepicker').datepicker({
+    todayHighlight: true,
+    autoclose: true
+  });
+  $('.js-select2').select2({
+    allowClear: true,
+    dropdownAutoWidth: true,
+    theme: 'bootstrap'
+  });
+});

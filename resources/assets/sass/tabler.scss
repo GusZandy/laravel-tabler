@@ -4,9 +4,22 @@
 
 // Variables
 @import "variables";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
 
 // Tabler
 @import "~tabler-ui/src/assets/scss/bundle";
+
+// Tabler
+@import "~font-awesome/scss/font-awesome";
+
+// Bootstrap Datepicker
+@import "~bootstrap-datepicker/dist/css/bootstrap-datepicker3.css";
+
+// Select2
+@import "~select2/dist/css/select2.css";
+
+// Select2 Bootstrap Theme
+@import "~select2-bootstrap-theme/src/select2-bootstrap";
 
 // Tablers Plugins
 @import "~tabler-ui/src/assets/plugins/charts-c3/plugin";
@@ -14,3 +27,16 @@
 @import "~tabler-ui/src/assets/plugins/iconfonts/plugin";
 @import "~tabler-ui/src/assets/plugins/maps-google/plugin";
 @import "~tabler-ui/src/assets/plugins/prismjs/plugin";
+
+.custom-control-label::after, .custom-control-label::before {
+  top: 0.1rem;
+}
+.select2 {
+  width: 100% !important;
+}
+.select2-dropdown {
+  z-index: 9999;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  margin-top: 0px;
+}

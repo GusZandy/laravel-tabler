@@ -2,8 +2,9 @@
 mix.webpackConfig({
   resolve: {
     alias: {
-      'circle-progress': path.resolve(__dirname, 'node_modules/tabler-ui/dist/assets/js/vendors/circle-progress.min.js'),
-      'core': path.resolve(__dirname, 'node_modules/tabler-ui/dist/assets/js/core.js')
+      'circle-progress': 'jquery-circle-progress',
+      'core': path.resolve(__dirname, 'node_modules/tabler-ui/dist/assets/js/core.js'),
+      'vector-map': 'jvectormap'
     }
   }
 });
@@ -16,7 +17,23 @@ mix.autoload({
 });
 
 mix.extract([
-  'lodash', 'jquery', 'vue'
+  'lodash',
+  'popper.js',
+  'bootstrap',
+  'bootstrap-datepicker',
+  'bootstrap-sass',
+  'chart.js',
+  'd3',
+  'jquery',
+  'jquery-circle-progress',
+  'jvectormap',
+  'moment',
+  'requirejs/require',
+  'select2',
+  'selectize',
+  'sparkline',
+  'tablesorter',
+  'vue'
 ], 'public/js/vendor.js');
 
 mix.version();
