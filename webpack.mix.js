@@ -11,14 +11,43 @@ let mix = require('laravel-mix');
  |
  */
 
- mix.js('resources/assets/js/tabler.js', 'public/js')
-    .sass('resources/assets/sass/tabler.scss', 'public/css');
+mix.webpackConfig({
+  resolve: {
+    alias: {
+      'circle-progress': 'jquery-circle-progress',
+      'core': path.resolve(__dirname, 'node_modules/tabler-ui/dist/assets/js/core.js'),
+      'vector-map': 'jvectormap'
+    }
+  }
+});
 
- mix.autoload({
-     jquery: [ '$', 'jQuery', 'jquery'],
- });
+mix.js('resources/assets/js/tabler.js', 'public/js')
+  .sass('resources/assets/sass/tabler.scss', 'public/css');
 
- mix.extract([
-     'lodash', 'jquery', 'vue'
- ], 'public/js/vendor.js');
- mix.version();
+mix.autoload({
+  jquery: [ '$', 'jQuery', 'jquery', 'window.jQuery'],
+});
+
+mix.extract([
+  'lodash',
+  'popper.js',
+  'bootstrap',
+  'bootstrap-datepicker',
+  'bootstrap-sass',
+  'chart.js',
+  'd3',
+  'jquery',
+  'jquery-circle-progress',
+  'jvectormap',
+  'moment',
+  'requirejs/require',
+  'select2',
+  'selectize',
+  'sparkline',
+  'tablesorter',
+  'vue'
+], 'public/js/vendor.js');
+
+mix.version();
+
+mix.setPublicPath('public');

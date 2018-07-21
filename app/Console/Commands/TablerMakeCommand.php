@@ -58,21 +58,11 @@ class TablerMakeCommand extends Command
      $this->info('Start Inspinia scaffolding');
      $this->info('Copying views...');
      $this->createDirectories();
-     $version = app()->version();
-     if (substr($version, 0, 3) == "5.5") {
-       foreach ($this->views as $key => $value) {
-         copy(
-           __DIR__.'/stubs/make/views-55/'.$key,
-           resource_path('views/'.$value)
-         );
-       }
-     } elseif (substr($version, 0, 3) == "5.6") {
-       foreach ($this->views as $key => $value) {
-         copy(
-           __DIR__.'/stubs/make/views-56/'.$key,
-           resource_path('views/'.$value)
-         );
-       }
+     foreach ($this->views as $key => $value) {
+       copy(
+         __DIR__.'/stubs/make/views/'.$key,
+         resource_path('views/'.$value)
+       );
      }
      $this->info('Copying assets...');
      $this->xcopy(__DIR__.'/../../../resources/assets', resource_path('assets'));

@@ -5,7 +5,7 @@
   </a>
   <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
     <a href="#" class="dropdown-item d-flex">
-      <span class="avatar mr-3 align-self-center" style="background-image: url(demo/faces/male/41.jpg)"></span>
+      <span class="avatar mr-3 align-self-center" style="background-image: url({{ asset('images/vendor/tabler-ui/dist/demo/faces/male/41.jpg') }})"></span>
       <div>
         <strong>Nathan</strong> pushed new commit: Fix page load performance issue.
         <div class="small text-muted">10 minutes ago</div>
