@@ -27,12 +27,12 @@ Viola! You've running a Laravel site using Tabler.
 ## Config
 To publish this package config to your app config run
 ```bash
-php artisan vendor:publish --provider="GuzZandy\Tabler\Providers\AppServiceProvider" --tag="config"
+php artisan vendor:publish --provider="GusZandy\Tabler\Providers\AppServiceProvider" --tag="config"
 ```
 ## Views
 To publish this package views so you can customize on your own run
 ```bash
-php artisan vendor:publish --provider="GuzZandy\Tabler\Providers\AppServiceProvider" --tag="views"
+php artisan vendor:publish --provider="GusZandy\Tabler\Providers\AppServiceProvider" --tag="views"
 ```
 
 # Next Step
