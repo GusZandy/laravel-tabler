@@ -35,7 +35,7 @@
     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
       @if (substr(app()->version(), 0, 3) == "5.5")
         {{ csrf_field() }}
-      @elseif (substr(app()->version(), 0, 3) == "5.6")
+      @elseif (substr(app()->version(), 0, 3) >= "5.6")
         @csrf
       @endif
     </form>
