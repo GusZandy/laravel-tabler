@@ -108,6 +108,9 @@ class TablerMakeCommand extends Command
        }
        // Simple copy for a file
        if (is_file($source)) {
+           if ((app()->version() >= "5.7") && ((new \SplFileInfo($source))->getExtension() == "scss")) {
+                return copy($source, resource_path("sass"));
+           }
            return copy($source, $dest);
        }
        // Make destination directory
