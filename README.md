@@ -1,6 +1,8 @@
 # Laravel Tabler
 Laravel 5.5, 5.6, and 5.7 Package for integrating Tabler template and this package is Laravel Mix friendly. Currently this package can be integrated easily only on fresh installation.
 
+### [New] for Tabler with Bootstrap 4 use this package, [HERE](https://github.com/GusZandy/laravel-tabler-bootstrap4.git)
+
 # Installation
 ```bash
 composer require guszandy/laravel-tabler
